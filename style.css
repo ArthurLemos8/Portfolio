@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+header{
+    text-align: center;
+    padding: 40px;
+}
+
+div h5 {
+    display: inline-block; 
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #00bfff;
+
+    animation: digitar 6s steps(40, end) forwards,
+               cursor 0.8s infinite;
+}
+@keyframes digitar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 40ch;
+    }
+}
+
+@keyframes cursor {
+    40% {
+        border-color: transparent;
+    }
+}
+.Foto-perfil{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 4px solid #00bfff;
+}
+
+.curriculo{
+    max-width: 60px;
+    background-color: #1e1e1e;
+}
+.curriculo a {
+    display: inline-block;
+    padding: 1px 1px;
+    text-decoration: none;
+    color: #00bfff;
+}
+.curriculo:hover{
+    color: #38a3d8;
+    transform: translateY(-5px);
+     transition: 0.5s;
+}
+section{
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+h2{
+    color: #00bfff;
+}
+.redes a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.redes a:hover{
+    color:#00bfff;
+}
+.redes img{
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+.redes img:hover{
+    transform: scale(1.3);
+     color:#00bfff;
+}
+.habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    background-color: #00bfff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.projetos{
+    display: block;
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.projetos:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+}
+.slider{
+   width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.slider-track{
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+.slider-track img {
+
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    margin-right: 11px;
+    border-radius: 9px;
+    transform-origin: bottom center;
+    transition: transform 0.3s;
+}
+.slider-track img:hover{
+    transform: translateY(-12px);
+    transform: scale(1.12);
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-61px * 13));
+    }
+}
+footer {
+    text-align: center;
+    padding: 8px;
+    margin-top: 15px;
+
+    background-color: #1e1e1e;
+    color: white;
+
+    border-top: 1px solid #333;
+}
