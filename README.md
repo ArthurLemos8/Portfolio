@@ -1,6 +1,6 @@
 # 🚀 Portfólio - Arthur Lemos
 
-Este projeto foi desenvolvido com HTML e CSS com o objetivo de apresentar minha trajetória acadêmica, habilidades, projetos e experiências pessoais de forma organizada e visualmente agradável.
+Este projeto foi desenvolvido com HTML, CSS e JavaScript com o objetivo de apresentar minha trajetória acadêmica, habilidades, projetos e experiências pessoais de forma organizada e visualmente agradável.
 
 ## 🌐 Acesse o Portfólio
 
